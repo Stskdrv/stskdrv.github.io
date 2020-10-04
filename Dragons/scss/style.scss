@@ -1,0 +1,88 @@
+@for $i from 1 through 6 {
+    @keyframes DragonFly-#{$i} {
+            0% {
+                left: -55px;
+                top: random(90) + vh;
+            }
+            50% {
+                left: 30%;
+                top: random(90) + vh;
+            }
+            70% {
+                left: 60%;
+                top: random(90) + vh;
+            }
+            100% {
+            
+                left: 100%;
+                top: random(90) + vh;
+            
+        }
+    }
+
+
+}
+
+body {
+  background-image: url(https://demiart.ru/forum/uploads5/post-352707-1272519593.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  counter-reset: count;
+  position: relative;
+  
+  
+  /* text-align: center; */
+}
+img {
+  height: 195px;
+  width: 195px;
+  left: -250px;
+}
+
+/* 
+.table{
+  height: 25px;
+  width: 65px;
+  background-color: white;
+  margin: -20px auto;
+  border-radius: 10px;
+} */
+h1 {
+  position: absolute;
+  bottom: 55px;
+  left: 45%;
+  background-color: rgba(255, 218, 185, 0.64);
+  border-radius: 7px;
+  padding: 5px;
+}
+
+h1::after {
+  content: ' ' counter(count);
+  color: #F14D2A;
+}
+
+input[type ="checkbox"] {
+  position: absolute;
+  visibility: hidden;
+  left: -999999999px;
+}
+input[type ="checkbox"]:checked {
+  counter-increment: count;
+}
+input[type ="checkbox"]:checked + img{
+    visibility: hidden;
+}
+
+@for $i from 1 through 6{
+    .dragon-#{$i} {
+        position: absolute;
+        animation: DragonFly-#{$i} random(6) + s linear #{$i}s 1 normal;
+    }
+}
+
+
+/* .char {
+   height: 140px;
+   width: 140px;
+} */
