@@ -1,0 +1,293 @@
+@media screen and ( max-width: 1200px )
+    
+    .menu
+        
+        &_item
+            padding-right: 20px
+            width: 100%
+            text-align: center
+            padding: 4px 0
+        &_link
+            display: block
+            font-size: 13px
+    .promo
+        &_header
+            font-size: 50px
+        
+
+    .mobile
+        &_subnote
+            font-size: 30px
+        &_item
+            width: 300px
+            &_subtitle
+                font-size: 18px
+    .car
+        &_subnote
+            font-size: 30px
+    .require
+        &_subnote
+            font-size: 30px
+        &_list li
+            font-size: 14px
+        &_descr
+            font-size: 14px
+    .footer
+        &_links
+            width: 300px
+            a
+                font-size: 10px
+
+@media screen and ( max-width: 991px )
+    .menu
+        &_item
+            padding-right: 8px
+        &_link
+            font-size: 10px
+    .subheader
+        img
+            width: 100%
+        &_logo_text
+            font-size: 10px
+        &_btn
+            width: 100%
+            margin-top: 21px
+            height: 40px
+    .promo
+        &_header
+            font-size: 40px
+        &_subheader
+            font-size: 30px
+    .advantages_reasons
+        font-size: 28px
+    .reason_header_text
+        margin-top: 60px
+    .reason_subheader_text  
+        margin-top: 10px 
+    .mobile
+        &_subnote
+            font-size: 29px
+        &_item
+            width: 230px
+            &_subtitle
+                font-size: 14px
+    .car
+        min-height: 400px
+        &_subnote
+            font-size: 30px
+        &_logo
+            width: 100%
+    .map
+        min-height: 500px
+        a   
+            margin-top: 250px
+
+    .require
+        &_subnote
+            font-size: 30px
+        &_list li
+            font-size: 14px
+        &_descr
+            font-size: 14px
+    .footer
+        &_links
+            width: 200px
+            a
+                font-size: 8px
+        &_links_sub
+            a   
+                font-size: 6px
+@media screen and ( max-width: 767px )    
+
+    .menu
+        position: fixed
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        background-color: rgba(0, 0, 0, 0.8)
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: none
+            margin: 10px 0
+        &_link  
+            font-size: 20px
+
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #ffffff
+            margin-bottom: 2px
+            transition: 0.6s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)    
+
+    .xs-hidden
+        display: none
+    .subheader
+        &_btn
+            display: block
+            margin: 0 auto
+            width: 200px
+            height: 40px
+            &:hover
+                background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+                color: #ffffff
+        &_contact_2 
+            font-size: 18px
+            font-weight: 400
+            text-transform: uppercase
+            text-align: center
+    .xs-visible
+        display: block
+    .promo
+        &_header
+            font-size: 23px
+        &_subheader
+            font-size: 19px
+        &_descr
+            font-size: 16px
+        &_btn
+            &:hover
+                background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+                color: #ffffff
+    .advantages
+        display: block
+        &_reasons
+            font-size: 19px
+        .logo_reason
+            display: block
+            margin: 10px auto
+            
+        .reason_header_text
+            text-align: center
+            margin-top: 2px
+
+        .reason_subheader_text
+            text-align: center
+            margin-bottom: 35px
+    .mobile
+        &_subnote
+            font-size: 19px
+        &_item
+            width: 230px
+            &_subtitle
+                font-size: 11px
+
+    .footer_mobile
+        width: 150px
+    .mobile_item_subtitle
+        padding: 5px
+    
+    .car
+        &_subnote
+            font-size: 19px
+        &_text
+            font-size: 14px
+
+    .require
+        &_subnote
+           font-size: 19px
+        &_title
+            font-size: 16px
+    .map
+        &_subnote
+            font-size: 21px
+        &_text
+            font-size: 16px
+
+@media screen and ( max-width: 575px )    
+    
+    .subheader
+        height: 60px
+        &_contact_2
+            font-size: 12px
+            font-weight: 400
+            margin-top: 11px
+        &_btn 
+            display: block
+            font-size: 10px
+            width: 120px
+            height: 22px
+            margin-top: 3px
+        &_logo
+            margin-top: 20px
+        &_logo_text
+            display: none
+
+    .promo
+        min-height: 400px
+        padding: 133px 0 67px 0
+
+        &_descr
+            display: none
+        &_header
+            margin-top: 30px
+            line-height: 23px
+        &_subheader
+            margin-top: 20px
+            font-size: 20px
+            padding: 0 10px
+            line-height: 30px
+        &_btn
+            width: 210px
+            height: 50px
+            margin-top: 72px
+    .menu
+        width: 80%
+    .mobile
+        &_item
+            height: 230px
+
+    .car
+        padding: 10px 20px 40px 20px
+    footer 
+        padding: 25px 0 20px 0
+        .footer 
+            &_mobile
+                display: flex
+                justify-content: center
+                width: 100%
+                a
+                    margin: 5px
+            &_social
+                width: 100%
+                justify-content: center
+            &_divider
+                margin: 0 auto
+            &_wrapper
+                display: block
+                padding: 0
+                                
+            &_wrapper > div 
+                display: block
+                width: 100%
+                margin: 15px auto
+            &_wrapper > div:nth-child(3)
+
+                justify-content: center
+                
+            &_links 
